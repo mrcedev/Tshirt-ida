@@ -20,6 +20,16 @@ npm run dev
 
 Then open http://localhost:5173 in your browser.
 
+### Windows: "running scripts is disabled on this system"
+
+If PowerShell shows this error for `npm`, either use `npm.cmd` instead (for example `npm.cmd install`, `npm.cmd run dev`), or allow local scripts once for your user account:
+
+```powershell
+Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+```
+
+Command Prompt and Git Bash don't have this restriction.
+
 ## Turning on the AI Designer (optional)
 
 The rest of the site works without this step.
